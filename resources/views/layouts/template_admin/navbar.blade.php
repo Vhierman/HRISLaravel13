@@ -3,14 +3,14 @@
         <div class="btn-toggle">
             <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
         </div>
-        <div class="search-bar flex-grow-1">
+        <div class="search-bar grow">
             <div class="position-relative">
                 <input class="form-control rounded-5 px-5 search-control d-lg-block d-none" type="text"
                     placeholder="Search">
                 <span
-                    class="material-icons-outlined position-absolute d-lg-block d-none ms-3 translate-middle-y start-0 top-50">search</span>
+                    class="material-icons-outlined position-absolute d-lg-block d-none ms-3 translate-middle-y inset-s-0 top-50">search</span>
                 <span
-                    class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 search-close">close</span>
+                    class="material-icons-outlined position-absolute me-3 translate-middle-y inset-e-0 top-50 search-close">close</span>
                 <div class="search-popup p-3">
                     <div class="card rounded-4 overflow-hidden">
                         <div class="card-header d-lg-none">
@@ -18,9 +18,9 @@
                                 <input class="form-control rounded-5 px-5 mobile-search-control" type="text"
                                     placeholder="Search">
                                 <span
-                                    class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
+                                    class="material-icons-outlined position-absolute ms-3 translate-middle-y inset-s-0 top-50">search</span>
                                 <span
-                                    class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 mobile-search-close">close</span>
+                                    class="material-icons-outlined position-absolute me-3 translate-middle-y inset-e-0 top-50 mobile-search-close">close</span>
                             </div>
                         </div>
                         <div class="card-body search-content">
@@ -169,7 +169,7 @@
                                 <div class="card rounded-4 shadow-none border mb-0">
                                     <div class="card-body">
                                         <div class="d-flex align-items-start gap-3">
-                                            <div class="mega-menu-icon flex-shrink-0 bg-danger">
+                                            <div class="mega-menu-icon shrink-0 bg-danger">
                                                 <i class="material-icons-outlined">question_answer</i>
                                             </div>
                                             <div class="mega-menu-content">
@@ -496,7 +496,7 @@
                                         <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
                                         <p class="mb-0 notify-time">Today</p>
                                     </div>
-                                    <div class="notify-close position-absolute end-0 me-3">
+                                    <div class="notify-close position-absolute inset-e-0 me-3">
                                         <i class="material-icons-outlined fs-6">close</i>
                                     </div>
                                 </div>
@@ -513,7 +513,7 @@
                                         <p class="mb-0 notify-desc">From USA an user has registered.</p>
                                         <p class="mb-0 notify-time">Yesterday</p>
                                     </div>
-                                    <div class="notify-close position-absolute end-0 me-3">
+                                    <div class="notify-close position-absolute inset-e-0 me-3">
                                         <i class="material-icons-outlined fs-6">close</i>
                                     </div>
                                 </div>
@@ -531,7 +531,7 @@
                                         <p class="mb-0 notify-desc">New payment recived successfully</p>
                                         <p class="mb-0 notify-time">1d ago</p>
                                     </div>
-                                    <div class="notify-close position-absolute end-0 me-3">
+                                    <div class="notify-close position-absolute inset-e-0 me-3">
                                         <i class="material-icons-outlined fs-6">close</i>
                                     </div>
                                 </div>
@@ -549,7 +549,7 @@
                                         <p class="mb-0 notify-desc">Recived new order from michle</p>
                                         <p class="mb-0 notify-time">2:15 AM</p>
                                     </div>
-                                    <div class="notify-close position-absolute end-0 me-3">
+                                    <div class="notify-close position-absolute inset-e-0 me-3">
                                         <i class="material-icons-outlined fs-6">close</i>
                                     </div>
                                 </div>
@@ -567,7 +567,7 @@
                                         <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
                                         <p class="mb-0 notify-time">Today</p>
                                     </div>
-                                    <div class="notify-close position-absolute end-0 me-3">
+                                    <div class="notify-close position-absolute inset-e-0 me-3">
                                         <i class="material-icons-outlined fs-6">close</i>
                                     </div>
                                 </div>
@@ -584,7 +584,7 @@
                                         <p class="mb-0 notify-desc">From USA an user has registered.</p>
                                         <p class="mb-0 notify-time">Yesterday</p>
                                     </div>
-                                    <div class="notify-close position-absolute end-0 me-3">
+                                    <div class="notify-close position-absolute inset-e-0 me-3">
                                         <i class="material-icons-outlined fs-6">close</i>
                                     </div>
                                 </div>
