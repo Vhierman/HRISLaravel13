@@ -8,7 +8,7 @@ use Laravel\Fortify\Features;
 //     'canRegister' => Features::enabled(Features::registration()),
 // ])->name('home');
 
-Route::view('/', 'layouts.template_admin.base')->name('home');
+Route::view('/', 'template_admin.dashboard_admin')->name('home');
 
 Route::prefix('{current_team}')
     ->middleware(['auth', 'verified', EnsureTeamMembership::class])
