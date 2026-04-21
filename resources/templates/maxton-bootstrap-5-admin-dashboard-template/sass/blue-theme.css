@@ -17,16 +17,6 @@
   background-color: transparent;
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg-2);
-  /* aligns */
-  /*header*/
-  /* sidebar */
-  /* main content */
-  /*page footer*/
-  /* Metis Menu */
-  /* order offcanvas */
-  /* utilities */
-  /* email box */
-  /* chat box */
 }
 [data-bs-theme=blue-theme] body .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: var(--bs-tertiary-bg);
@@ -56,6 +46,10 @@
 }
 [data-bs-theme=blue-theme] body .card-title {
   color: #dee2e6;
+}
+[data-bs-theme=blue-theme] body {
+  /* aligns */
+  /*header*/
 }
 [data-bs-theme=blue-theme] body .top-header .navbar {
   background-color: transparent;
@@ -150,6 +144,9 @@
   color: #ffffff;
   background-color: var(--bs-body-bg-2);
 }
+[data-bs-theme=blue-theme] body {
+  /* sidebar */
+}
 [data-bs-theme=blue-theme] body .sidebar-wrapper {
   background-color: var(--bs-body-bg);
   border-right: 1px solid var(--bs-border-color);
@@ -195,6 +192,9 @@
 [data-bs-theme=blue-theme] body .form-select:disabled,
 [data-bs-theme=blue-theme] body .form-control:disabled {
   background-color: var(--bs-disabled-bg);
+}
+[data-bs-theme=blue-theme] body {
+  /* main content */
 }
 [data-bs-theme=blue-theme] body .main-wrapper .main-content .sharelink {
   color: #dee2e6;
@@ -252,15 +252,23 @@
 }
 [data-bs-theme=blue-theme] body .order-delete {
   color: #dee2e6;
-  cursor: pointer;
 }
 [data-bs-theme=blue-theme] body .order-delete:hover, [data-bs-theme=blue-theme] body .order-delete:focus {
   color: #ffffff;
   background-color: var(--bs-body-bg-2);
 }
+[data-bs-theme=blue-theme] body .order-delete {
+  cursor: pointer;
+}
+[data-bs-theme=blue-theme] body {
+  /*page footer*/
+}
 [data-bs-theme=blue-theme] body .page-footer {
   background-color: transparent;
   border-top: 1px solid var(--bs-border-color);
+}
+[data-bs-theme=blue-theme] body {
+  /* Metis Menu */
 }
 [data-bs-theme=blue-theme] body .sidebar-nav .metismenu {
   background: 0 0;
@@ -292,6 +300,10 @@
 }
 [data-bs-theme=blue-theme] body .metismenu .has-arrow:after {
   border-color: initial;
+}
+[data-bs-theme=blue-theme] body {
+  /* order offcanvas */
+  /* utilities */
 }
 [data-bs-theme=blue-theme] body .primaery-menu-close {
   color: #dee2e6;
@@ -345,8 +357,7 @@
 }
 [data-bs-theme=blue-theme] body .sticky-header {
   box-shadow: rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem;
-  -webkit-backdrop-filter: blur(2.625rem);
-          backdrop-filter: blur(2.625rem);
+  backdrop-filter: blur(2.625rem);
   border-bottom: 1px solid var(--bs-border-color);
 }
 [data-bs-theme=blue-theme] body .progress {
@@ -405,6 +416,9 @@
 [data-bs-theme=blue-theme] body .mail-read {
   color: #a2b0c5 !important;
   background-color: var(--bs-body-bg-2) !important;
+}
+[data-bs-theme=blue-theme] body {
+  /* email box */
 }
 [data-bs-theme=blue-theme] body .email-wrapper {
   background-color: var(--bs-body-bg);
@@ -498,6 +512,9 @@
 }
 [data-bs-theme=blue-theme] body .compose-mail-close:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+[data-bs-theme=blue-theme] body {
+  /* chat box */
 }
 [data-bs-theme=blue-theme] body .chat-wrapper {
   background-color: var(--bs-body-bg);

@@ -23,7 +23,6 @@
 [data-bs-theme=semi-dark] body .sidebar-wrapper {
   background-color: var(--bs-semi-body-bg);
   border-right: 1px solid var(--bs-semi-border-color);
-  /* Metis Menu */
 }
 [data-bs-theme=semi-dark] body .sidebar-wrapper .sidebar-header {
   background-color: var(--bs-semi-body-bg);
@@ -38,6 +37,9 @@
 }
 [data-bs-theme=semi-dark] body .sidebar-wrapper .sidebar-header .logo-name h5 {
   color: var(--bs-semi-body-color);
+}
+[data-bs-theme=semi-dark] body .sidebar-wrapper {
+  /* Metis Menu */
 }
 [data-bs-theme=semi-dark] body .sidebar-wrapper .sidebar-nav {
   background-color: var(--bs-semi-body-bg);

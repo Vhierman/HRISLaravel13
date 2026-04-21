@@ -347,7 +347,6 @@ input::placeholder {
   z-index: 12;
   transition: ease-out 0.3s;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.044), 0 2px 6px 0 rgba(0, 0, 0, 0.049);
-  /* Metis Menu */
 }
 .sidebar-wrapper .sidebar-header {
   display: flex;
@@ -381,11 +380,16 @@ input::placeholder {
   height: 45px;
   border-radius: 50%;
   transition: all 0.3s;
-  display: none;
-  cursor: pointer;
 }
 .sidebar-wrapper .sidebar-header .sidebar-close:hover, .sidebar-wrapper .sidebar-header .sidebar-close:focus {
   background-color: #efefef;
+}
+.sidebar-wrapper .sidebar-header .sidebar-close {
+  display: none;
+  cursor: pointer;
+}
+.sidebar-wrapper {
+  /* Metis Menu */
 }
 .sidebar-wrapper .sidebar-nav {
   margin-top: 70px;
@@ -453,10 +457,6 @@ input::placeholder {
   text-decoration: none;
   background-color: rgba(0, 140, 255, 0.05);
 }
-.sidebar-wrapper .sidebar-nav .metismenu ul {
-  background-color: #fff;
-  padding: 0;
-}
 .sidebar-wrapper .sidebar-nav .metismenu ul a {
   padding: 6px 15px 6px 20px;
   font-size: 15px;
@@ -464,6 +464,10 @@ input::placeholder {
 }
 .sidebar-wrapper .sidebar-nav .metismenu ul a i {
   margin-right: 5px;
+}
+.sidebar-wrapper .sidebar-nav .metismenu ul {
+  background-color: #fff;
+  padding: 0;
 }
 .sidebar-wrapper .sidebar-nav .metismenu ul ul a {
   padding: 8px 15px 8px 30px;
@@ -501,19 +505,19 @@ input::placeholder {
   body.toggled .sidebar-wrapper:hover .sidebar-header .sidebar-close {
     display: flex;
   }
-  body.toggled:not(.sidebar-hovered) .sidebar-wrapper {
-    width: 70px;
+  body.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .logo-name {
+    display: none;
   }
   body.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header {
     width: 70px;
     justify-content: center;
     width: 70px;
   }
-  body.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .logo-name {
-    display: none;
-  }
   body.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .toggle-icon {
     display: none;
+  }
+  body.toggled:not(.sidebar-hovered) .sidebar-wrapper {
+    width: 70px;
   }
   body.toggled:not(.sidebar-hovered) .sidebar-wrapper .metismenu a {
     justify-content: center;
@@ -641,11 +645,13 @@ input::placeholder {
   height: 45px;
   border-radius: 50%;
   transition: all 0.3s;
-  width: 30px;
-  height: 30px;
 }
 .main-wrapper .main-content .options:hover, .main-wrapper .main-content .options:focus {
   background-color: #efefef;
+}
+.main-wrapper .main-content .options {
+  width: 30px;
+  height: 30px;
 }
 .main-wrapper .main-content .dropdown-menu-share {
   width: -moz-max-content;
@@ -765,10 +771,12 @@ input::placeholder {
   height: 45px;
   border-radius: 50%;
   transition: all 0.3s;
-  cursor: pointer;
 }
 .order-delete:hover, .order-delete:focus {
   background-color: #efefef;
+}
+.order-delete {
+  cursor: pointer;
 }
 
 /*page footer*/
@@ -1548,13 +1556,13 @@ form select.error:focus {
   border-color: #377dff;
 }
 
-.welcome-back-img {
-  position: relative;
-}
 @media (min-width: 1280px) {
   .welcome-back-img {
     position: absolute;
     bottom: 0;
     right: 2rem;
   }
+}
+.welcome-back-img {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

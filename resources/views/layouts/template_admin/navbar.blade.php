@@ -77,8 +77,8 @@
                             <div class="search-list d-flex flex-column gap-2">
                                 <div class="search-list-item d-flex align-items-center gap-3">
                                     <div class="memmber-img">
-                                        <img src="assets/images/avatars/01.png" width="32" height="32"
-                                            class="rounded-circle" alt="">
+                                        <img src="{{ asset('template_admin/assets/images/avatars/01.png') }}"
+                                            width="32" height="32" class="rounded-circle" alt="">
                                     </div>
                                     <div class="">
                                         <h5 class="mb-0 search-list-title ">Andrew Stark</h5>
@@ -87,8 +87,8 @@
 
                                 <div class="search-list-item d-flex align-items-center gap-3">
                                     <div class="memmber-img">
-                                        <img src="assets/images/avatars/02.png" width="32" height="32"
-                                            class="rounded-circle" alt="">
+                                        <img src="{{ asset('template_admin/assets/images/avatars/02.png') }}"
+                                            width="32" height="32" class="rounded-circle" alt="">
                                     </div>
                                     <div class="">
                                         <h5 class="mb-0 search-list-title ">Snetro Jhonia</h5>
@@ -97,8 +97,8 @@
 
                                 <div class="search-list-item d-flex align-items-center gap-3">
                                     <div class="memmber-img">
-                                        <img src="assets/images/avatars/03.png" width="32" height="32"
-                                            class="rounded-circle" alt="">
+                                        <img src="{{ asset('template_admin/assets/images/avatars/03.png') }}"
+                                            width="32" height="32" class="rounded-circle" alt="">
                                     </div>
                                     <div class="">
                                         <h5 class="mb-0 search-list-title">Michle Clark</h5>
@@ -120,40 +120,41 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;"
-                    data-bs-toggle="dropdown"><img src="assets/images/county/02.png" width="22" alt="">
+                    data-bs-toggle="dropdown"><img src="{{ asset('template_admin/assets/images/county/02.png') }}"
+                        width="22" alt="">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                src="assets/images/county/01.png" width="20" alt=""><span
-                                class="ms-2">English</span></a>
+                                src="{{ asset('template_admin/assets/images/county/01.png') }}" width="20"
+                                alt=""><span class="ms-2">English</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                src="assets/images/county/02.png" width="20" alt=""><span
-                                class="ms-2">Catalan</span></a>
+                                src="{{ asset('template_admin/assets/images/county/02.png') }}" width="20"
+                                alt=""><span class="ms-2">Catalan</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                src="assets/images/county/03.png" width="20" alt=""><span
-                                class="ms-2">French</span></a>
+                                src="{{ asset('template_admin/assets/images/county/03.png') }}" width="20"
+                                alt=""><span class="ms-2">French</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                src="assets/images/county/04.png" width="20" alt=""><span
-                                class="ms-2">Belize</span></a>
+                                src="{{ asset('template_admin/assets/images/county/04.png') }}" width="20"
+                                alt=""><span class="ms-2">Belize</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                src="assets/images/county/05.png" width="20" alt=""><span
-                                class="ms-2">Colombia</span></a>
+                                src="{{ asset('template_admin/assets/images/county/05.png') }}" width="20"
+                                alt=""><span class="ms-2">Colombia</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                src="assets/images/county/06.png" width="20" alt=""><span
-                                class="ms-2">Spanish</span></a>
+                                src="{{ asset('template_admin/assets/images/county/06.png') }}" width="20"
+                                alt=""><span class="ms-2">Spanish</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                src="assets/images/county/07.png" width="20" alt=""><span
-                                class="ms-2">Georgian</span></a>
+                                src="{{ asset('template_admin/assets/images/county/07.png') }}" width="20"
+                                alt=""><span class="ms-2">Georgian</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                src="assets/images/county/08.png" width="20" alt=""><span
-                                class="ms-2">Hindi</span></a>
+                                src="{{ asset('template_admin/assets/images/county/08.png') }}" width="20"
+                                alt=""><span class="ms-2">Hindi</span></a>
                     </li>
                 </ul>
             </li>
