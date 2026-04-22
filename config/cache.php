@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Collection;
 
 return [
 
@@ -125,6 +126,10 @@ return [
     |
     */
 
-    'serializable_classes' => false,
+    // 'serializable_classes' => false,
+    'serializable_classes' => [
+    App\Data\CachedDashboardStats::class,
+    App\Support\CachedPricingSnapshot::class,
+    ],
 
 ];

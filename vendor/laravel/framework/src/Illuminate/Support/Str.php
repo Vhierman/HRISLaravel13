@@ -140,7 +140,7 @@ class Str
      */
     public static function transliterate($string, $unknown = '?', $strict = false)
     {
-        return ASCII::to_transliterate($string, $unknown, $strict);
+        return ASCII::to_transliterate((string) $string, $unknown, $strict);
     }
 
     /**
@@ -225,11 +225,7 @@ class Str
      */
     public static function camel($value)
     {
-        if (isset(static::$camelCache[$value])) {
-            return static::$camelCache[$value];
-        }
-
-        return static::$camelCache[$value] = lcfirst(static::studly($value));
+        return static::$camelCache[$value] ?? static::$camelCache[$value] = lcfirst(static::studly($value));
     }
 
     /**
@@ -791,6 +787,8 @@ class Str
      */
     public static function markdown($string, array $options = [], array $extensions = [])
     {
+        $string = (string) $string;
+
         $converter = new GithubFlavoredMarkdownConverter($options);
 
         $environment = $converter->getEnvironment();
@@ -812,6 +810,8 @@ class Str
      */
     public static function inlineMarkdown($string, array $options = [], array $extensions = [])
     {
+        $string = (string) $string;
+
         $environment = new Environment($options);
 
         $environment->addExtension(new GithubFlavoredMarkdownExtension());
@@ -1227,7 +1227,7 @@ class Str
     {
         try {
             return (string) $value;
-        } catch (Throwable $e) {
+        } catch (Throwable) {
             return $fallback;
         }
     }

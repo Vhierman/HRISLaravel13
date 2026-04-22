@@ -11,16 +11,22 @@ trait ReadsClassAttributes
      * Get a configuration value from an attribute, falling back to a property.
      *
      * @param  object  $target
-     * @param  string  $attributeClass
+     * @param  class-string  $attributeClass
      * @param  string|null  $property
      * @param  mixed  $default
      * @return mixed
      */
     protected function getAttributeValue($target, string $attributeClass, ?string $property = null, $default = null)
     {
-        try {
-            $reflection = new ReflectionClass($target);
+        $reflection = new ReflectionClass($target);
 
+        $defaultProperties = $reflection->getDefaultProperties();
+
+        if (isset($target->{$property}) && $target->{$property} !== ($defaultProperties[$property] ?? null)) {
+            return $target->{$property};
+        }
+
+        try {
             do {
                 $attributes = $reflection->getAttributes($attributeClass);
 
@@ -32,11 +38,7 @@ trait ReadsClassAttributes
             //
         }
 
-        if ($property !== null) {
-            return $target->{$property} ?? $default;
-        }
-
-        return $default;
+        return $target->{$property} ?? $default;
     }
 
     /**
@@ -49,6 +51,6 @@ trait ReadsClassAttributes
     {
         $properties = get_object_vars($instance);
 
-        return count($properties) === 0 ? true : reset($properties);
+        return $properties === [] ? true : reset($properties);
     }
 }
